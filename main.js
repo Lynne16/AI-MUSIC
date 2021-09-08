@@ -8,7 +8,6 @@ leftWristscore=0;
 rightWristscore=0;
 song1_status="";
 song2_status="";
-hpremix="Harry Potter Remix";
 
 function preload(){
 song1=loadSound("music.mp3");
@@ -43,6 +42,7 @@ function draw(){
 
         if(song1_status == false){
             song1.play();
+            document.getElementById("song_name").innerHTML="Harry Potter Remix";
         }
     }
 
@@ -55,7 +55,8 @@ function draw(){
         song1.stop();
 
         if(song2_status == false){
-            song2.play()
+            song2.play();
+            document.getElementById("song_name").innerHTML="Peter Pan";
         }
     }
 }
